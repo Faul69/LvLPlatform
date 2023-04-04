@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Transform))]
 
-public class MoveController : MonoBehaviour
+public class MovementController : MonoBehaviour
 {
     private const string JumpTrigger = "IsJump";
     private const string RunTrigger = "IsRunning";
@@ -45,18 +45,18 @@ public class MoveController : MonoBehaviour
         }
         else
         {
-            _animator.SetBool("IsRunning", false);
+            _animator.SetBool(RunTrigger, false);
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            _animator.SetBool("IsRunning", false);
-            _animator.SetBool("IsJump", true);
+            _animator.SetBool(RunTrigger, false);
+            _animator.SetBool(JumpTrigger, true);
             _transform.Translate(0, _speed * Time.deltaTime * _jumpForse, 0);
         }
         else
         {
-            _animator.SetBool("IsJump", false);
+            _animator.SetBool(JumpTrigger, false);
         }
     }
 
