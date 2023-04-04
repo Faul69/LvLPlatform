@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Transform))]
 
-public class MovementController : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     private const string JumpTrigger = "IsJump";
     private const string RunTrigger = "IsRunning";

@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 [RequireComponent(typeof(Animator))]
 
-public class OnCollisionTriggerController : MonoBehaviour
+public class Collision : MonoBehaviour
 {
     private const string GroundTrigger = "IsGround";
     private const string DamageTrigger = "IsDamage";
@@ -19,9 +19,14 @@ public class OnCollisionTriggerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent<ActiveController>(out ActiveController coin))
+        if (collision.gameObject.TryGetComponent<Active>(out Active coin))
         {
             coin.Pick();
+        }
+
+        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+        {
+            _animator.SetBool(DamageTrigger, true);
         }
     }
 
@@ -30,11 +35,6 @@ public class OnCollisionTriggerController : MonoBehaviour
         if (collision.gameObject.TryGetComponent<TilemapCollider2D>(out TilemapCollider2D tilemapCollider))
         {
             _animator.SetBool(GroundTrigger, true);
-        }
-
-        if (collision.gameObject.TryGetComponent<EnemyBehaviour>(out EnemyBehaviour enemy))
-        {
-            _animator.SetBool(DamageTrigger, true);
         }
     }
 

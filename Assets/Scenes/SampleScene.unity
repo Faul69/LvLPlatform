@@ -1570,7 +1570,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.06}
@@ -1675,6 +1675,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3476493701841280364, guid: fc748cf195f31de40bcfca0b4db0288d, type: 3}
   m_PrefabInstance: {fileID: 463047357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1340080924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4976483622900349299, guid: 772e60a8d1f67344c91b04df583feb3f, type: 3}
+  m_PrefabInstance: {fileID: 4976483622771831248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1340080932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340080924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c87cc5c0aecbb4e9f837d8f735b898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 3
+  _jumpForse: 3
 --- !u!1 &1373128579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,7 +1819,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2550963811027669662, guid: 772e60a8d1f67344c91b04df583feb3f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 772e60a8d1f67344c91b04df583feb3f, type: 3}
 --- !u!4 &5914576625914279437 stripped
 Transform:

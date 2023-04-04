@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject _child;
+    private readonly WaitForSecondsRealtime _wait = new(5);
 
     private void FixedUpdate()
     {
@@ -16,7 +17,7 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator SetActiveTrue()
     {
-        yield return new WaitForSecondsRealtime(5);
+        yield return _wait;
         _child.SetActive(true);
     }
 }

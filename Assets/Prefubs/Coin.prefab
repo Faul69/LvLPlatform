@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 7073519493584375891}
   - component: {fileID: 7073519493584375888}
   - component: {fileID: 7073519493584375892}
-  - component: {fileID: 3805571244406805124}
+  - component: {fileID: 1456387205706184092}
   m_Layer: 0
   m_Name: CoinSprite
   m_TagString: Untagged
@@ -180,7 +180,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3805571244406805124
+--- !u!114 &1456387205706184092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

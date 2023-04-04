@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 
-public class ActiveController : MonoBehaviour
+public class Active : MonoBehaviour
 {
     private const string PickTrigger = "Picked";
 
