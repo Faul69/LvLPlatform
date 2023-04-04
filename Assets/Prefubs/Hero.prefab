@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4976483622900349302}
   - component: {fileID: 4976483622900349301}
   - component: {fileID: 4976483622900349300}
+  - component: {fileID: 2550963811027669662}
+  - component: {fileID: 202662088411653901}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -128,12 +130,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.6
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &4976483622900349300
 Animator:
   serializedVersion: 5
@@ -155,3 +157,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2550963811027669662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4976483622900349299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b40074bdf1363e4988c6d597947e74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 3
+  _jumpForse: 3
+--- !u!114 &202662088411653901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4976483622900349299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc09cb8c06b768f4498c232ef679e7b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

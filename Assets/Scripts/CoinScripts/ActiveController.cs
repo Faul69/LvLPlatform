@@ -4,8 +4,10 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 
-public class CoinBehaviour : MonoBehaviour
+public class ActiveController : MonoBehaviour
 {
+    private const string PickTrigger = "Picked";
+
     private Animator _animator;
 
     private void OnEnable()
@@ -15,7 +17,7 @@ public class CoinBehaviour : MonoBehaviour
 
     public void Pick()
     {
-        _animator.SetTrigger("Picked");
+        _animator.SetTrigger(PickTrigger);
     }
 
     public void SetActiveFalse()
